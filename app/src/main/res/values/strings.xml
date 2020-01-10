@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">ScaleType Demo</string>
+
+    <string name="image_size">Image Size</string>
+    <string name="small">Small</string>
+    <string name="wide">Wide</string>
+    <string name="tall">Tall</string>
+    <string name="user">User</string>
+
+    <string name="scale_type">ScaleType</string>
+    <string name="fit_center">FIT_CENTER</string>
+    <string name="fit_start">FIT_START</string>
+    <string name="fit_end">FIT_END</string>
+    <string name="fit_xy">FIT_XY</string>
+    <string name="center">CENTER</string>
+    <string name="center_crop">CENTER_CROP</string>
+    <string name="center_inside">CENTER_INSIDE</string>
+    <string name="matrix">MATRIX</string>
+
+    <string
+        name="fit_center_desc"><i><b>FIT_CENTER</b> computes a scale that maintains the original
+         source aspect ratio, but also ensures that source fits entirely inside destination. At
+        least one axis (X or Y) will fit exactly. The result is centered inside destination.</i>
+        \n\nNote that all of the images are displayed in the middle with letter-boxing on either
+        the top/bottom or sides.
+    </string>
+
+    <string
+        name="fit_start_desc"><i><b>FIT_START</b> computes a scale that maintains the original
+        source aspect ratio, but also ensures that source fits entirely inside destination. At
+        least one axis (X or Y) will fit exactly. START aligns the result to the left and top
+        edges of destination.</i>
+        \n\nNote that all of the images are displayed on the top or left with letter-boxing on
+        the opposing side.
+    </string>
+
+    <string
+        name="fit_end_desc"><i><b>FIT_END</b> computes a scale that maintains the original source
+        aspect ratio, but also ensures that source fits entirely inside destination. At least one
+        axis (X or Y) will fit exactly. END aligns the result to the right and bottom edges of
+        destination.</i>
+        \n\nNote that all of the images are displayed on the bottom or right with letter-boxing
+        on the opposing side.
+    </string>
+
+    <string
+        name="fit_xy_desc"><i><b>FIT_XY</b> scales X and Y independently, so that source matches
+        destination exactly. This may change the aspect ratio of the source.</i>
+        \n\nNote that all of the images are shrunk/stretched to fill the area exactly.
+    </string>
+
+    <string
+        name="center_desc"><i><b>CENTER</b> centers the image in the view, but  performs no
+        scaling.</i>
+        \n\nNote that neither dimension of any of the images is scaled and that this results in
+        extra white-space all around the small image, but cropping of the longer dimension for
+        each the wide and tall images. Note also that the sides are cropped for the still-too wide
+        tall image, but that the top and bottom contain extra white-space for the wide image.
+    </string>
+
+    <string
+        name="center_crop_desc"><i>The <b>CENTER_CROP</b> ScaleType scales the image uniformly
+        (maintaining the image\'s aspect ratio) so that both dimensions (width and height) of the
+        image will be equal to or larger than the corresponding dimension of the view (minus
+        padding). The image is then centered in the view.</i>
+        \n\nNote that shorter dimension of each of the images fits the view dimension exactly,
+        while the longer dimension of each is cropped-off.
+    </string>
+
+    <string
+        name="center_inside_desc"><i>The <b>CENTER_INSIDE</b> ScaleType scales the image uniformly
+        (maintaining the image\'s aspect ratio) so that both dimensions (width and height) of the
+        image will be equal to or less than the corresponding dimension of the view (minus
+        padding). The image is then centered in the view.</i>
+        \n\nNote that the small image is not stretched, but simply centered in the view. Note also
+        that longer dimension of wide and tall images fits the view exactly, while the other
+        dimension is padded with whitespace.
+    </string>
+    <string
+        name="matrix_desc"><i>The <b>MATRIX</b> ScaleType scales the image using the image\'s
+        matrix when drawing. The image\'s matrix can be set using setImageMatrix(Matrix). In this
+        case, we create a scaled trapezoidal effect by applying a polygon-to-polygon mapping.</i>
+        \n\nNote that for this app, a simple mapping polygon is applied that scales the image à
+        la FitXY, but which also decreases the length the top side, giving a trapezoidal effect.
+    </string>
+
+    <string
+        name="image_cd">Image that demonstrates results of different scaleType options.</string>
+</resources>

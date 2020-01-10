@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tbadg.scaletypedemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            style="@style/RadioGroupLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/image_size"/>
+
+        <View style="@style/Divider"/>
+
+        <RadioGroup
+            android:id="@+id/image_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <RadioButton
+                android:id="@+id/small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:onClick="handleImageSizeClick"
+                android:text="@string/small"/>
+
+            <RadioButton
+                android:id="@+id/wide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:onClick="handleImageSizeClick"
+                android:text="@string/wide"/>
+
+            <RadioButton
+                android:id="@+id/tall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:onClick="handleImageSizeClick"
+                android:text="@string/tall"/>
+
+            <RadioButton
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:onClick="handleImageSizeClick"
+                android:padding="0dp"
+                android:text="@string/user"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/RadioGroupLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scale_type"/>
+
+        <View style="@style/Divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/scale_type_rg1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="46"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/fit_xy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/fit_xy"/>
+
+                <RadioButton
+                    android:id="@+id/fit_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/fit_center"/>
+
+                <RadioButton
+                    android:id="@+id/fit_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/fit_start"/>
+
+                <RadioButton
+                    android:id="@+id/fit_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/fit_end"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/scale_type_rg2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="54"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/center"/>
+
+                <RadioButton
+                    android:id="@+id/center_crop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/center_crop"/>
+
+                <RadioButton
+                    android:id="@+id/center_inside"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/center_inside"/>
+
+                <RadioButton
+                    android:id="@+id/matrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="handleScaleTypeClick"
+                    android:text="@string/matrix"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/image_cd"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#11000000"
+            android:text="@string/center_desc"/>
+    </LinearLayout>
+</ScrollView>
