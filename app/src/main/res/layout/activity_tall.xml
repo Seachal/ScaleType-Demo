@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/black"
     >
 
     <LinearLayout
@@ -67,7 +68,8 @@
             android:background="@color/colorPrimary" />
 
         <TextView
-            android:text="分\n割\n线"
+            android:text="1\n1\n1"
+            android:textColor="@android:color/holo_red_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
@@ -75,7 +77,6 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/tall"
             android:scaleType="center"
@@ -123,7 +124,8 @@
             android:background="@color/colorPrimary" />
 
         <TextView
-            android:text="分\n割\n线"
+            android:text="1\n1\n1"
+            android:textColor="@android:color/holo_red_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
@@ -131,7 +133,6 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/tall"
             android:background="@color/colorPrimary" />

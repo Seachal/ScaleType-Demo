@@ -11,6 +11,33 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
+
+        <activity
+            android:name=".ConstraintImageviewWrapNormalTallActivity_test"
+            android:exported="false" />
+        <activity
+            android:name=".ConstraintImageviewWrapNormalTallActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".ConstraintImageviewWrapNormalTallActivity2"
+            android:exported="false" />
+
+        <activity
+            android:name=".ConstraintImageviewWrapNormalTallActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".RelativeImageviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConstraintImageviewActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ConstraintImageviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllAndAdjustViewBoundsActivity"
+            android:exported="false" />
         <activity android:name=".ListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".AllActivity"
             android:exported="false" />
@@ -32,7 +58,6 @@
             android:name=".SmallActivity"
             android:exported="false" />
         <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>

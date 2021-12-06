@@ -202,6 +202,8 @@ public class MainActivity extends Activity {
 
     /**
      * Applies image matrix transformation(s) onto the image view.
+     *
+     * Matrix   矩阵，可以自己操纵变形
      */
     @SuppressWarnings("PointlessArithmeticExpression")
     private void applyMatrix() {

@@ -35,6 +35,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:src="@drawable/small" />
 
@@ -59,6 +60,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitXY"
                         android:src="@drawable/small" />
@@ -69,6 +71,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitCenter"
                         android:src="@drawable/small" />
@@ -81,6 +84,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitStart"
                         android:src="@drawable/small" />
@@ -99,6 +103,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitEnd"
                         android:src="@drawable/small" />
@@ -115,6 +120,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="center"
                         android:src="@drawable/small" />
@@ -126,6 +132,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="centerCrop"
                         android:src="@drawable/small" />
@@ -144,6 +151,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="centerInside"
                         android:src="@drawable/small" />
@@ -156,6 +164,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="matrix"
                         android:src="@drawable/small" />
@@ -172,6 +181,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:src="@drawable/small" />
 
@@ -192,6 +202,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
                     android:background="@color/colorPrimary"
                     android:src="@drawable/wide" />
 
@@ -205,6 +216,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitXY"
                         android:src="@drawable/wide" />
@@ -215,6 +227,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:contentDescription="fitCenter"
                         android:scaleType="fitCenter"
@@ -227,6 +240,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitStart"
                         android:src="@drawable/wide" />
@@ -244,6 +258,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitEnd"
                         android:src="@drawable/wide" />
@@ -259,6 +274,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="center"
                         android:src="@drawable/wide" />
@@ -269,6 +285,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="centerCrop"
                         android:src="@drawable/wide" />
@@ -287,6 +304,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="centerInside"
                         android:src="@drawable/wide" />
@@ -297,6 +315,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="matrix"
                         android:src="@drawable/wide" />
@@ -312,6 +331,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:src="@drawable/wide" />
 
@@ -331,6 +351,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
                     android:background="@color/colorPrimary"
                     android:src="@drawable/tall" />
 
@@ -345,6 +366,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitXY"
                         android:src="@drawable/tall" />
@@ -355,6 +377,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:contentDescription="fitCenter"
                         android:scaleType="fitCenter"
@@ -367,6 +390,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitStart"
                         android:src="@drawable/tall" />
@@ -384,6 +408,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="fitEnd"
                         android:src="@drawable/tall" />
@@ -399,6 +424,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="center"
                         android:src="@drawable/tall" />
@@ -409,6 +435,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="centerCrop"
                         android:src="@drawable/tall" />
@@ -426,6 +453,7 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="centerInside"
                         android:src="@drawable/tall" />
@@ -436,6 +464,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:scaleType="matrix"
                         android:src="@drawable/tall" />
@@ -451,12 +480,102 @@
                         android:layout_height="120dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
                         android:background="@color/colorPrimary"
                         android:src="@drawable/tall" />
 
 
+
+
                 </LinearLayout>
 
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不设置adjustViewBounds ，fitXY"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/small" />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/wide" />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tall" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置adjustViewBounds，fitXY"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/small" />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/wide" />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tall" />
+
+                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>

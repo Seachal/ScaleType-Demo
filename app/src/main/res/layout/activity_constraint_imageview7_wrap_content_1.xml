@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    android:paddingTop="175dp"
+    android:paddingBottom="175dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_orange_dark">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@android:color/darker_gray"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pop_window_tall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+
+<!--
+ConstraintLayout 在自己大小固定时，子 view  使用 wrap_content是有可能超出父区域的。
+
+
+ConstraintLayout  在自己  wrap_content 时， 子 view使用 wrap_content是有可能超出父区域的
+
+
+ConstraintLayout 自己使用 0dp， 这个受  ConstraintLayout的父 view 影响。
+
+
+ConstraintLayout 中 子 view  match_parent ，一个 view 就会抢占 view的宽高。
+
+但是  0dp，就适应父 view的宽高，还会个其他兄弟 view,留有空间。 
+-->

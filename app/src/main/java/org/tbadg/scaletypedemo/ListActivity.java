@@ -38,6 +38,22 @@ public class ListActivity extends AppCompatActivity {
         activityList.add(new StartActivityBean("TallActivity", TallActivity.class));
 
         activityList.add(new StartActivityBean("AllActivity", AllActivity.class));
+        activityList.add(new StartActivityBean("AllActivity AdjustViewBounds", AllAndAdjustViewBoundsActivity.class));
+        activityList.add(new StartActivityBean("Constraint Imageview AdjustViewBounds", ConstraintImageviewActivity.class));
+
+        activityList.add(new StartActivityBean("Constraint Imageview AdjustViewBounds2 ", ConstraintImageviewActivity2.class));
+        activityList.add(new StartActivityBean("Relative ImageviewAdjustViewBounds2 ", RelativeImageviewActivity.class));
+
+
+
+        activityList.add(new StartActivityBean("ConstraintImageviewWrapNormalTallActivity_test", ConstraintImageviewWrapNormalTallActivity_test.class));
+
+        activityList.add(new StartActivityBean("ConstraintImageviewWrapNormalTallActivity1", ConstraintImageviewWrapNormalTallActivity1.class));
+        activityList.add(new StartActivityBean("ConstraintImageviewWrapNormalTallActivity2", ConstraintImageviewWrapNormalTallActivity2.class));
+        activityList.add(new StartActivityBean("ConstraintImageviewWrapNormalTallActivity3", ConstraintImageviewWrapNormalTallActivity3.class));
+
+
+
 
 
     }
@@ -50,6 +66,8 @@ public class ListActivity extends AppCompatActivity {
         recycler_view = findViewById(R.id.recycler_view);
         recycler_view.setAdapter(new MyAdapter(ListActivity.this, activityList));
         recycler_view.setLayoutManager(new LinearLayoutManager(ListActivity.this));
+
+
 
 
     }
