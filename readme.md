@@ -19,12 +19,14 @@
 
     > 在不缩放的前提下，将 Image 的中间显示在 ImageView 的中间
 
-    *   Image 尺寸比 ImageView 尺寸大
+
+*   Image 尺寸比 ImageView 尺寸大
         *   只显示 Image 中间与 ImageView 尺寸相等的部分
-    *   Image 尺寸与 ImageView 尺寸相等
+*   Image 尺寸与 ImageView 尺寸相等
         *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
+*   Image 尺寸比 ImageView 尺寸小
         *   Image 完整地显示在 ImageView 中间
+ 
 
     
 ###   CENTER\_CROP
@@ -33,13 +35,13 @@
 
     > Image Width Height 等比例缩放至至少一个方向上 Image 与 ImageView 尺寸一样（Image 短边缩放至与 ImageView 对应边相等（Width 对应 Width，Height 对应 Height）），之后将缩放后的 Image 的中间显示在 ImageView 的中间
 
-    *   Image 尺寸比 ImageView 尺寸大
+  
+ *   Image 尺寸比 ImageView 尺寸大
         *   Image 短边缩小至与 ImageView 对应边相等，Image 长边根据相应的缩放系数进行缩放，之后将 Image 中间显示在 ImageView 中间。
-    *   Image 尺寸与 ImageView 尺寸相等
+*   Image 尺寸与 ImageView 尺寸相等
         *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
+*   Image 尺寸比 ImageView 尺寸小
         *   Image 短边放大至与 ImageView 对应边相等，Image 长边根据相应的缩放系数进行缩放，之后将 Image 中间显示在 ImageView 中间。
-
    
 ###  CENTER\_INSIDE
 
@@ -47,13 +49,13 @@
 
     > 完整地将 Image 显示在 ImageView 中间。如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放。之后，将缩放后的 Image 完整地显示在 ImageView 上；如果 Image 比 ImageView 尺寸小，直接将 Image 显示在 ImageView 中间。
 
-    *   Image 尺寸比 ImageView 尺寸大
+   
+*   Image 尺寸比 ImageView 尺寸大
         *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
-    *   Image 尺寸与 Image View 尺寸相等
+*   Image 尺寸与 Image View 尺寸相等
         *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
+*   Image 尺寸比 ImageView 尺寸小
         *   Image 不进行任何处理，直接显示在 ImageView 中间。
-
     
 ###   FIT\_CENTER
 
@@ -61,12 +63,12 @@
 
     > 完整地将 Image 显示在 ImageView 中间。如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 上；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 上。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
 
-    *   Image 尺寸比 ImageView 尺寸大
-        *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
-    *   Image 尺寸与 ImageView 尺寸相等
-        *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
-        *   Image 长边放大至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
+*   Image 尺寸比 ImageView 尺寸大
+    *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
+*   Image 尺寸与 ImageView 尺寸相等
+    *   完整显示
+*   Image 尺寸比 ImageView 尺寸小
+    *   Image 长边放大至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
 
   
 ###   FIT\_END
@@ -75,12 +77,12 @@
 
     > **完整地将 Image 显示在 ImageView 右边或下边。** 如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 右边或下边；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 右边或下边。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
 
-    *   Image 尺寸比 ImageView 尺寸大
-        *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 右边或下边。
-    *   Image 尺寸与 ImageView 尺寸相等
-        *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
-        *   Image 长边放大至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 右边或下边。
+*   Image 尺寸比 ImageView 尺寸大
+    *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 右边或下边。
+*   Image 尺寸与 ImageView 尺寸相等
+    *   完整显示
+*   Image 尺寸比 ImageView 尺寸小
+    *   Image 长边放大至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 右边或下边。
 
     
 ###   FIT\_START
@@ -89,12 +91,12 @@
 
     > **完整地将 Image 显示在 ImageView 左边或上边。** 如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 左边或上；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 左边或上边。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
 
-    *   Image 尺寸比 ImageView 尺寸大
-        *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 左边或上边。
-    *   Image 尺寸与 ImageView 尺寸相等
-        *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
-        *   Image 长边放大至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 左边或上边。
+*   Image 尺寸比 ImageView 尺寸大
+    *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 左边或上边。
+*   Image 尺寸与 ImageView 尺寸相等
+    *   完整显示
+*   Image 尺寸比 ImageView 尺寸小
+    *   Image 长边放大至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 左边或上边。
 
     
 ###   FIT\_XY
@@ -103,12 +105,12 @@
 
     > **完整地将 Image 显示在 ImageView 里面。** Image X、Y 方向上分别缩放至与 ImageView 对应边相等，Image 的 Width 和 Height 缩放系数可以不一致。
 
-    *   Image 尺寸比 ImageView 尺寸大
-        *   Image 的 Width、Height 分别缩放至与 ImageView 对应边相等，之后将 Image 完整地显示在 ImageView 里面。
-    *   Image 尺寸与 ImageView 尺寸相等
-        *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
-        *   Image 的 Width、Height 分别缩放至与 ImageView 对应边相等，之后将 Image 完整地显示在 ImageView 里面。
+*   Image 尺寸比 ImageView 尺寸大
+    *   Image 的 Width、Height 分别缩放至与 ImageView 对应边相等，之后将 Image 完整地显示在 ImageView 里面。
+*   Image 尺寸与 ImageView 尺寸相等
+    *   完整显示
+*   Image 尺寸比 ImageView 尺寸小
+    *   Image 的 Width、Height 分别缩放至与 ImageView 对应边相等，之后将 Image 完整地显示在 ImageView 里面。
 
   
 ###   MATRIX
@@ -117,12 +119,12 @@
 
     > 将 Image 从 ImageView 左上角开始显示。
 
-    *   Image 尺寸比 ImageView 尺寸大
-        *   ImageView 只显示 Image 中从左上角开始与 ImageView 尺寸相等的部分，多余的地方不显示。
-    *   Image 尺寸与 ImageView 尺寸相等
-        *   完整显示
-    *   Image 尺寸比 ImageView 尺寸小
-        *   Image 显示在 ImageView 的左上角。
+*   Image 尺寸比 ImageView 尺寸大
+    *   ImageView 只显示 Image 中从左上角开始与 ImageView 尺寸相等的部分，多余的地方不显示。
+*   Image 尺寸与 ImageView 尺寸相等
+    *   完整显示
+*   Image 尺寸比 ImageView 尺寸小
+    *   Image 显示在 ImageView 的左上角。
 
 
 
