@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:text="图片顺序：small  wide  tall。\n
  scaleType 1:fitxy,fitCenter,fit_start,fit_end； \n
- scaleType 2:center,center_inside,center_crop, matrix,默认(fitCenter)"
+ scaleType 2:center,center_crop,center_inside, matrix,默认(fitCenter)"
                         android:textColor="@android:color/holo_red_light"
                         android:textSize="12dp" />
 
