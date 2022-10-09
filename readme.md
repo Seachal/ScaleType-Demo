@@ -50,12 +50,12 @@
     > 完整地将 Image 显示在 ImageView 中间。如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放。之后，将缩放后的 Image 完整地显示在 ImageView 上；如果 Image 比 ImageView 尺寸小，直接将 Image 显示在 ImageView 中间。
 
    
-*   Image 尺寸比 ImageView 尺寸大
-        *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
-*   Image 尺寸与 Image View 尺寸相等
-        *   完整显示
-*   Image 尺寸比 ImageView 尺寸小
-        *   Image 不进行任何处理，直接显示在 ImageView 中间。
+* Image 尺寸比 ImageView 尺寸大
+    *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
+* Image 尺寸与 Image View 尺寸相等
+    *   完整显示
+* Image 尺寸比 ImageView 尺寸小
+   * Image 不进行任何处理，直接显示在 ImageView 中间。
     
 ###   FIT\_CENTER
 
