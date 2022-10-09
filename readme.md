@@ -21,11 +21,11 @@
 
 
 *   Image 尺寸比 ImageView 尺寸大
-        *   只显示 Image 中间与 ImageView 尺寸相等的部分
+    *   只显示 Image 中间与 ImageView 尺寸相等的部分
 *   Image 尺寸与 ImageView 尺寸相等
-        *   完整显示
+    *   完整显示
 *   Image 尺寸比 ImageView 尺寸小
-        *   Image 完整地显示在 ImageView 中间
+    *   Image 完整地显示在 ImageView 中间
  
 
     
@@ -36,12 +36,12 @@
     > Image Width Height 等比例缩放至至少一个方向上 Image 与 ImageView 尺寸一样（Image 短边缩放至与 ImageView 对应边相等（Width 对应 Width，Height 对应 Height）），之后将缩放后的 Image 的中间显示在 ImageView 的中间
 
   
- *   Image 尺寸比 ImageView 尺寸大
-        *   Image 短边缩小至与 ImageView 对应边相等，Image 长边根据相应的缩放系数进行缩放，之后将 Image 中间显示在 ImageView 中间。
-*   Image 尺寸与 ImageView 尺寸相等
-        *   完整显示
-*   Image 尺寸比 ImageView 尺寸小
-        *   Image 短边放大至与 ImageView 对应边相等，Image 长边根据相应的缩放系数进行缩放，之后将 Image 中间显示在 ImageView 中间。
+* Image 尺寸比 ImageView 尺寸大
+  * Image 短边缩小至与 ImageView 对应边相等，Image 长边根据相应的缩放系数进行缩放，之后将 Image 中间显示在 ImageView 中间。
+* Image 尺寸与 ImageView 尺寸相等
+   * 完整显示
+* Image 尺寸比 ImageView 尺寸小
+   *   Image 短边放大至与 ImageView 对应边相等，Image 长边根据相应的缩放系数进行缩放，之后将 Image 中间显示在 ImageView 中间。
    
 ###  CENTER\_INSIDE
 
