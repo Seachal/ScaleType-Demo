@@ -15,9 +15,9 @@
 
 ###    CENTER
 
-     Center the image in the view, but **perform no scaling**
+Center the image in the view, but **perform no scaling**
 
-     在不缩放的前提下，将 Image 的中间显示在 ImageView 的中间
+在不缩放的前提下，将 Image 的中间显示在 ImageView 的中间
 
 
 *   Image 尺寸比 ImageView 尺寸大
@@ -31,9 +31,9 @@
     
 ###   CENTER\_CROP
 
-    Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be **equal to or larger than** the corresponding dimension of the view (minus padding). The image is then centered in the view.
+Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be **equal to or larger than** the corresponding dimension of the view (minus padding). The image is then centered in the view.
 
-     Image Width Height 等比例缩放至至少一个方向上 Image 与 ImageView 尺寸一样（Image 短边缩放至与 ImageView 对应边相等（Width 对应 Width，Height 对应 Height）），之后将缩放后的 Image 的中间显示在 ImageView 的中间
+Image Width Height 等比例缩放至至少一个方向上 Image 与 ImageView 尺寸一样（Image 短边缩放至与 ImageView 对应边相等（Width 对应 Width，Height 对应 Height）），之后将缩放后的 Image 的中间显示在 ImageView 的中间
 
   
 * Image 尺寸比 ImageView 尺寸大
@@ -45,9 +45,9 @@
    
 ###  CENTER\_INSIDE
 
-    Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be **equal to or less than** the corresponding dimension of the view (minus padding). The image is then centered in the view.
+Scale the image uniformly (maintain the image's aspect ratio) so that both dimensions (width and height) of the image will be **equal to or less than** the corresponding dimension of the view (minus padding). The image is then centered in the view.
 
-    完整地将 Image 显示在 ImageView 中间。如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放。之后，将缩放后的 Image 完整地显示在 ImageView 上；如果 Image 比 ImageView 尺寸小，直接将 Image 显示在 ImageView 中间。
+完整地将 Image 显示在 ImageView 中间。如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放。之后，将缩放后的 Image 完整地显示在 ImageView 上；如果 Image 比 ImageView 尺寸小，直接将 Image 显示在 ImageView 中间。
 
    
 * Image 尺寸比 ImageView 尺寸大
@@ -59,9 +59,9 @@
     
 ###   FIT\_CENTER
 
-   Compute a scale that will maintain the original src aspect ratio, but will also ensure that **src fits entirely inside dst**. **At least one axis (X or Y) will fit exactly.** The result is centered inside dst.
+Compute a scale that will maintain the original src aspect ratio, but will also ensure that **src fits entirely inside dst**. **At least one axis (X or Y) will fit exactly.** The result is centered inside dst.
 
-   完整地将 Image 显示在 ImageView 中间。如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 上；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 上。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
+完整地将 Image 显示在 ImageView 中间。如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 上；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 上。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
 
 *   Image 尺寸比 ImageView 尺寸大
     *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 中间。
@@ -73,9 +73,9 @@
   
 ###   FIT\_END
 
-    Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. **END aligns the result to the right and bottom edges of dst.**
+Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. **END aligns the result to the right and bottom edges of dst.**
 
-    **完整地将 Image 显示在 ImageView 右边或下边。** 如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 右边或下边；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 右边或下边。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
+**完整地将 Image 显示在 ImageView 右边或下边。** 如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 右边或下边；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 右边或下边。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
 
 *   Image 尺寸比 ImageView 尺寸大
     *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 右边或下边。
@@ -87,9 +87,9 @@
     
 ###   FIT\_START
 
-    Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. **START aligns the result to the left and top edges of dst.**
+Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. **START aligns the result to the left and top edges of dst.**
 
-    **完整地将 Image 显示在 ImageView 左边或上边。** 如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 左边或上；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 左边或上边。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
+**完整地将 Image 显示在 ImageView 左边或上边。** 如果 Image 比 ImageView 尺寸大，则将长边缩放至与 ImageView 对应边相等，同时，短边根据缩放系数缩放，之后将缩放后的 Image 完整地显示在 ImageView 左边或上；如果 Image 比 ImageView 尺寸小，则将长边放大至与 ImageView 对应边相等，之后将缩放后的 Image 完整地显示在 ImageView 左边或上边。总之，在保证 Image 完整显示在 ImageView 里面的前提下，保证在一个方向上，Image 与 ImageView 是相等的。
 
 *   Image 尺寸比 ImageView 尺寸大
     *   Image 长边缩小至与 ImageView 对应边相等，Image 短边根据相应的缩放系数进行缩放，之后将 Image 显示在 ImageView 左边或上边。
@@ -101,9 +101,9 @@
     
 ###   FIT\_XY
 
-    Scale in X and Y independently, so that src matches dst exactly. This may change the aspect ratio of the src.
+Scale in X and Y independently, so that src matches dst exactly. This may change the aspect ratio of the src.
 
-    **完整地将 Image 显示在 ImageView 里面。** Image X、Y 方向上分别缩放至与 ImageView 对应边相等，Image 的 Width 和 Height 缩放系数可以不一致。
+**完整地将 Image 显示在 ImageView 里面。** Image X、Y 方向上分别缩放至与 ImageView 对应边相等，Image 的 Width 和 Height 缩放系数可以不一致。
 
 *   Image 尺寸比 ImageView 尺寸大
     *   Image 的 Width、Height 分别缩放至与 ImageView 对应边相等，之后将 Image 完整地显示在 ImageView 里面。
@@ -115,9 +115,9 @@
   
 ###   MATRIX
 
-    Scale using the image matrix when drawing.
+Scale using the image matrix when drawing.
 
-    将 Image 从 ImageView 左上角开始显示。
+将 Image 从 ImageView 左上角开始显示。
 
 *   Image 尺寸比 ImageView 尺寸大
     *   ImageView 只显示 Image 中从左上角开始与 ImageView 尺寸相等的部分，多余的地方不显示。
