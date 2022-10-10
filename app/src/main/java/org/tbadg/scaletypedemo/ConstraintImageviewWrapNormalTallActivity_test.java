@@ -9,7 +9,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 public class ConstraintImageviewWrapNormalTallActivity_test extends AppCompatActivity {
 
     ImageView image;
-   Rl rl_root
+//   Rl rl_root
     ConstraintLayout constraintlayout;
 
 

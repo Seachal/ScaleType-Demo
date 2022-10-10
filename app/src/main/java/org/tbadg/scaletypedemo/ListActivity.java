@@ -18,6 +18,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+/**
+ * @Author zhangxc
+ * @Description //TODO
+ * @Date 17:43 2022/10/9
+ *
+ * @return * @return null
+ **/
 public class ListActivity extends AppCompatActivity {
 
     RecyclerView recycler_view;
