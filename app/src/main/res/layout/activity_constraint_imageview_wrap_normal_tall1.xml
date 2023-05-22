@@ -9,7 +9,7 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="300dp"
+        android:layout_width="600px"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@android:color/holo_orange_dark">

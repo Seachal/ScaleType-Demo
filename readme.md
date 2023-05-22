@@ -13,6 +13,8 @@
 
 
 
+scaleType默认值（省缺值）是FIT_CENTER模式
+
 ###    CENTER
 
 Center the image in the view, but **perform no scaling**
@@ -221,7 +223,7 @@ getAdjustViewBounds()
 ------
 
 
-##  关于 adjust 解析的最清楚的了。
+##  关于 adjustViewBounds 解析的最清楚的了。
 
 取值为true时：
 
@@ -244,4 +246,80 @@ XML定义里的android:adjustViewBounds="true"会将这个ImageView的scaleType�
 （2）当图片的宽大于等于100px时，此时ImageView将与图片拥有相同的宽高比，因此ImageView的layout\_height值为：100除以图片的宽高比。比如图片是500X500的，那么layout\_height是100。图片将保持宽高比缩放，完整显示在ImageView中，并且完全占满ImageView。
 
 ----
+## 解决问题
+产品要去点击图片外部安全区域不应该执行跳转。
+
+
+测试发现
+弹窗广告点击图片外的区域不应该可以跳转
+
+自己真实测试发现，是因为， ImageView在 src 图片内容外还有一些边界。 
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <FrameLayout
+        android:id="@+id/img_container"
+        android:layout_width="@dimen/dp_px_570"
+        android:layout_height="@dimen/dp_px_774"
+        android:layout_centerHorizontal="true">
+
+        <!--        fitCenter 默认
+ tools:src="@drawable/t_new_user_dialog"
+
+ t_vip_info_bg
+
+ signaward
+
+-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dialog_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+          
+            tools:src="@drawable/t_vip_info_bg" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dialog_close"
+        android:layout_marginTop="@dimen/dp_26"
+        android:layout_below="@id/img_container"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/close_activities"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"/>
+</RelativeLayout>
+```
+
+```Kotlin
+//       图片内容
+        rootView.dialog_iv.setOnClickListener {
+            dismiss()
+            clickListener(this, false)
+        }
+//        关闭
+        rootView.dialog_close.setOnClickListener {
+            dismiss()
+            clickListener(this, true)
+        }
+```
+
+![img_2.png](img_2.png)
+
+adjustViewBounds 的作用  调整视图边界
+
+所以使用adjustViewBounds就可以把图片的填充边界去掉。 
+
+
+* 没使用 adjustViewBounds 的情况
+![img_1.png](img_1.png)
+* 使用 adjustViewBounds  去掉图片填充边界的效果。 
+![img.png](img.png)
 
